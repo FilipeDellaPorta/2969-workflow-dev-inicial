@@ -3,8 +3,13 @@
 import db from '../db/dbconfig.js';
 
 class Autor {
-  constructor({ id, nome, nacionalidade, created_at, updated_at }) 
-  {
+  constructor({ 
+    id, 
+    nome, 
+    nacionalidade, 
+    created_at, 
+    updated_at,
+  }) {
     this.id = id || null;
     this.nome = nome;
     this.nacionalidade = nacionalidade;

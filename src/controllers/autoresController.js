@@ -85,14 +85,14 @@ class AutoresController {
       // Verifica se o autor foi encontrado
       if (!autor) {
         return res.status(404).json({
-        message: 'Autor não encontrado.'
+          message: 'Autor não encontrado.',
         });
       }
 
       // Verifica se livros foram encontrados para o autor
       if (!listaLivros || listaLivros.length === 0) {
         return res.status(404).json({
-        message: 'Nenhum livro encontrado para este autor.'
+          message: 'Nenhum livro encontrado para este autor.',
         });
       }
       return res.status(200).json({ autor, livros: listaLivros });

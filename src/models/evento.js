@@ -1,3 +1,5 @@
+/* eslint-disable class-methods-use-this */
+/* eslint-disable camelcase */
 class Evento {
   constructor({
     id,
@@ -19,13 +21,13 @@ class Evento {
 
   static async pegarEventos() {
     return [{
-            id: 1,
-            nome: 'lançamento',
-            descricao: 'descrição',
-            data: '2023-01-01',
-            autor_id: 1,
-            created_at: '2023-01-01 07:00:00',
-            updated_at: '2023-01-01 07:00:00',
+      id: 1,
+      nome: 'lançamento',
+      descricao: 'descrição',
+      data: '2023-01-01',
+      autor_id: 1,
+      created_at: '2023-01-01 07:00:00',
+      updated_at: '2023-01-01 07:00:00',
         }];
     }
 }

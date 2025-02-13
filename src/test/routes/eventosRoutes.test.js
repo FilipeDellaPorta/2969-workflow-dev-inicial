@@ -35,6 +35,6 @@ describe('GET em /eventos', () => {
       .end((err, res) => {
         expect(res.status).to.equal(404);
         done();
-    });    
+      });
   });
 });

@@ -3,9 +3,9 @@
 import { after } from 'mocha';
 import chai from 'chai';
 import chaiHttp from 'chai-http';
+import sinon from 'sinon';
 import app from '../../app.js';
 import db from '../../db/dbconfig.js';
-import sinon from 'sinon';
 import EventosController from '../../controllers/eventosController.js';
 
 chai.use(chaiHttp);
